@@ -74,7 +74,6 @@ function StorageClassField({ value, onChange }: StorageClassFieldProps) {
   function handleSpecifyChange(v: string) {
     const newValue = v.trim();
     if (newValue === '') {
-      setMode('default');
       lastEmittedRef.current = undefined;
       onChange(undefined);
       return;
